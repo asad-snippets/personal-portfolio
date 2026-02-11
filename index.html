@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="ORJ9oU23UPzDDpE2xLFvHme1yZCeqnIL0H8Qw4BXAJM" />
+    <meta name="description" content="ASADX - Personal portfolio of a web developer, showcasing projects, skills, and services.">
+    <meta name="keywords" content="ASADX, portfolio, web developer, projects, skills, services, HTML, CSS, JavaScript">
+    <meta name="author" content="ASADX">
+    <meta name="robots" content="index, follow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASADX</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='gradBg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%234A90E2;stop-opacity:1'/%3E%3Cstop offset='50%25' style='stop-color:%232E5BBA;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%231B3A6B;stop-opacity:1'/%3E%3C/linearGradient%3E%3ClinearGradient id='gradAccent' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2364B5F6;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%232196F3;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='12' fill='url(%23gradBg)'/%3E%3Crect x='8' y='12' width='48' height='40' rx='4' fill='none' stroke='url(%23gradAccent)' stroke-width='2' opacity='0.4'/%3E%3Cpath d='M18 28 L14 32 L18 36' fill='none' stroke='%23FFFFFF' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M46 28 L50 32 L46 36' fill='none' stroke='%23FFFFFF' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='24' y1='26' x2='40' y2='26' stroke='%23FFFFFF' stroke-width='1.5' opacity='0.8'/%3E%3Cline x1='24' y1='32' x2='40' y2='32' stroke='%23FFFFFF' stroke-width='1.5' opacity='0.8'/%3E%3Cline x1='24' y1='38' x2='40' y2='38' stroke='%23FFFFFF' stroke-width='1.5' opacity='0.8'/%3E%3Ccircle cx='32' cy='52' r='2.5' fill='%2364B5F6'/%3E%3C/svg%3E">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA/klEQVR4nO3UMQrCQBCG4QksULBQbBQsRBEbsRHEzs7OykILsRUr8Qo5QOzkDBZewEYshERBEDvBxkIkkHkh3hG5g9vZ3d2d2b/+M3/x8/+xM1AqlUqlUqlUKpVKpVKpVCqVSqVS+V+JxWJ4PB4YjUb4+/sHXq8X5vM5arUajsfjMtKdjvYXExMT/H4/Ho/nxVUUBQ6HA0wmk2XkuSFKpRK0Wi0Ui0VMJhOEQiGEQiFMJpMV5BoaGGi325DJZJDL5SBJE0xGI/z5+QHz+RyTyQTr9RrLpRLmy+Xi47ndblQqFZRKJZhMJpiN46/vbrlcQq/Xg8PhgM1mg16vB4fDgVarBZPJhM1mg3K5jM1mA7PZDIPBAL/fjzqdDnZ2dsSxWCyYTCZYLpcYDAaYzWbY7/dQrVaXkXMDlEqlUql8h/8BGrpNg7zJurkAAAAASUVORK5CYII=" sizes="32x32">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAABbklEQVR4nO3UMQrCQBCG4QksULBQbBQsRBEbsRHEzs7OykILsRUr8Qo5QOzkDBZewEYshERBEDvBxkIkkHkh3hG5g9vZ3d2d2b/+M3/x8/+xM1AqlUqlUqlUKpVKpVKpVCqVSqVS+V+JxWJ4PB4YjUb4+/sHXq8X5vM5arUajsfjMtKdjvYXExMT/H4/Ho/nxVUUBQ6HA0wmk2XkuSFKpRK0Wi0Qi0UwGo2QSCQQj8cxmUxWkGtoYKDdbkMmk0Eul4MkTTAZjfDn5wfM53NMJhNMJhMsl0osly6XT55eOp2GXq9HpVJBLpeDyWiG2dj++v6Wy+V11+v1ymw2g0ajQaVSQSqVQjAYRDKZxGQywXK5xGq1wmq1Qr1eR6FQwG63w3A4RKfTwXA4RLfbRa/XQ7fbRbVaRa/XQ6/XQzqdhslkQjqdRjabRfaPl8fj+cXZ2RlmMxlmMxkGgwGGwyGGwyEqlQoGgwHK5TIGgwEGgwEGgwGGwyHG4zHm8zn4fD5sNhssFgtUKhWUy2WUSiXodDooFAqoVCrIZDJQKpWYz+dQKBRQKBTIZDIolUqQy+V4eHhAJpNBOp1GNptFOp3G/f391jEajUa8vLwgm81idnZ2dAOUSqVSqVSv/AHpCt5Qj0xZHgAAAABJRU5ErkJggg==" sizes="64x64">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAACr8Q9kAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVElEQVR4nO3UMQrCQBCG4QksULBQbBQsRBEbsRHEzs7OykILsRUr8Qo5QOzkDBZewEYshERBEDvBxkIkkHkh3hG5g9vZ3d2d2b/+M3/x8/+xM1AqlUqlUqlUKpVKpVKpVCqVSqVS+V+JxWJ4PB4YjUb4+/sHXq8X5vM5arUajsfjMtKdjvYXExMT/H4/Ho/nxVUUBQ6HA0wmk2XkuSFKpRK0Wi0Qi0UwGo2QSCQQj8cxmUxWkGtoYKDdbkMmk0Eul4MkTTAZjfDn5wfM53NMJhNMJhMsl0osly6XT55eOp2GXq9HpVJBLpeDyWiG2dj++v6Wy+V11+v1ymw2g0ajQaVSQSqVQjAYRDKZxGQywXK5xGq1wmq1Qr1eR6FQwG63w3A4RKfTwXA4RLfbRa/XQ7fbRbVaRa/XQ6/XQzqdRjqdRjabRTabRSqVQiqVglqthkajgUajgVqthmq1CpVKhVqtBqVSCaVSCZVKBZVKBXq9HkqlEkqlEkqlEp6enqDT6dBoNHA6nTA6nZDL5Xj7+/tVX19f0Gq1UK1WoVKpoFarQavVQq1WQ6lUglKpRLlcRqlUwvv7O/r9Pvr9PkajEWazGQaDAfr9PkajEVqtFlqtFmq1GlqtFnq9HvV6HZ1OB91uF91uF91uF91uF+12G71eD61WC61WC71eD51OBz0eD+p1Ho8Ho9EIarUavV4Po9EI7XYb5+fnaLVaaLVaaLVa6HQ66HQ66HQ6uL29xenp6dfJyQkQkfrQRqNBp9NBoVDAYDBAu91Gp9NBo9FAuVxGtVpFtVpFo9FAp9NBo9FAq9VCqVRCsVhEo9FAp9NBo9FAuVxGq9VCuVxGo9FAr9dDq9VCo9FAq9VCo9FAr9eDzWbDzc0NkslkysPlcsFutwPxxXuaVCqVSqVSqVSv/AHlYDlmNXQDdgAAAABJRU5ErkJggg=="">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span>My Portfolio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">
+                            <span class="nav-link-content">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            <span class="nav-link-content">About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">
+                            <span class="nav-link-content">Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">
+                            <span class="nav-link-content">Services</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <span class="nav-link-content">Contact</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="themeToggle" class="btn btn-sm btn-theme-toggle rounded-pill">
+                            <i class="fas fa-moon me-1"></i> <span id="themeToggleText">Dark Mode</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+ <!-- Hero Section (updated for mobile) -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 text-center text-lg-start">
+                <h1 id="hero-title"></h1>
+                <h4>Python Developer</h4>
+                <p>I'm Computer Science graduate specializing in Python and Django development. I build secure, scalable web applications with Django REST Framework and modern frontend technologies.</p>
+                
+                <div class="hero-buttons-container">
+                    <div class="d-flex justify-content-center justify-content-lg-start flex-wrap gap-2 mb-3">
+                        <a href="#projects" class="btn btn-primary btn-lg btn-view-projects">View Projects</a>
+                        <a href="https://wa.me/923002642211" class="btn btn-success btn-lg" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp me-2"></i>Contact on WhatsApp
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="M_Asad_Resume.pdf" class="btn btn-lg btn-glowing btn-resume" id="downloadResumeHero" download="Muhammad_Asad_Resume.pdf">
+                            <i class="fas fa-download me-2"></i>Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-frame">
+                        <div class="hero-image-container">
+                            <img src="Images/asad1.png" alt="Muhammad Asad's Portfolio Image" class="img-fluid hero-image">
+                        </div>
+                    </div>
+                    <div class="hero-image-accent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="about" class="about">
+    <div class="container">
+        <div class="section-title">
+            <h2>About Me</h2>
+            <p>Get to know more about my skills and experience</p>
+        </div>
+        <div class="row justify-content-center"> <!-- Centered row -->
+            <div class="col-lg-8 text-center"> <!-- Centered column -->
+                <div class="about-content">
+                    <h3>Python & Django Developer</h3>
+                    <div class="about-bio">
+                        <p>Aspiring Computer Science graduate with hands-on experience in developing web applications using Python and Django. Proficient in building secure, scalable, and maintainable back-end systems with Django REST Framework (DRF) and RESTful API integration.</p>
+                        <p>Experienced in working with relational databases like MySQL and applying best practices in web development. Currently seeking opportunities to contribute my technical skills and grow within a dynamic development team.</p>
+                    </div>
+                    <div class="skills-section mt-4">
+                        <div class="row justify-content-center">
+                            <div class="col-md-5 mb-3">
+                                <div class="skill-card">
+                                    <h5><i class="fab fa-python me-2 text-primary"></i> Backend Development</h5>
+                                    <p class="skill-items">Python, Django, Django REST Framework, MySQL</p>
+                                </div>
+                            </div>
+                            <div class="col-md-5 mb-3">
+                                <div class="skill-card">
+                                    <h5><i class="fas fa-code me-2 text-primary"></i> Frontend Development</h5>
+                                    <p class="skill-items">HTML5, CSS3, JavaScript, Bootstrap</p>
+                                </div>
+                            </div>
+                            <div class="col-md-5 mb-3">
+                                <div class="skill-card">
+                                    <h5><i class="fas fa-database me-2 text-primary"></i> Databases</h5>
+                                    <p class="skill-items">MySQL, MongoDB</p>
+                                </div>
+                            </div>
+                            <div class="col-md-5 mb-3">
+                                <div class="skill-card">
+                                    <h5><i class="fas fa-tools me-2 text-primary"></i> Tools & Technologies</h5>
+                                    <p class="skill-items">Git, GitHub, RESTful APIs, Machine Learning</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Updated Projects Section in index.html -->
+<section id="projects" class="projects">
+    <div class="container">
+        <div class="section-title">
+            <h2>My Projects</h2>
+            <p class="section-subtitle">Professional projects showcasing my skills</p>
+        </div>
+        <div class="row g-4">
+            <!-- Project 1: AI Healthcare -->
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-badge">AI Project</div>
+                        <img src="Images/project1.jpg" alt="AI-Powered Healthcare System" class="project-img">
+                        <div class="project-hover">
+                            <div class="hover-content">
+                                <h4>View Details</h4>
+                                <div class="project-links">
+                                    <a href="#" class="project-link demo-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                    <a href="https://github.com/asad-snippets/AI-Powered-Healthcare-Platform" class="project-link code-link" target="_blank" rel="noopener">
+                                        <i class="fab fa-github"></i> Source Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">AI-Powered Healthcare System</h3>
+                        <p class="project-description">A smart healthcare platform that predicts diseases based on patient data using machine learning models. Features include patient record management and intelligent disease analysis.</p>
+                        <div class="project-tools">
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fab fa-python"></i></span>
+                                <span class="tool-name">Python</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fab fa-js"></i></span>
+                                <span class="tool-name">Django</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fas fa-database"></i></span>
+                                <span class="tool-name">MySQL</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fas fa-brain"></i></span>
+                                <span class="tool-name">ML</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fab fa-html5"></i></span>
+                                <span class="tool-name">HTML5</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fab fa-css3-alt"></i></span>
+                                <span class="tool-name">CSS3</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fab fa-js-square"></i></span>
+                                <span class="tool-name">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: MediStore -->
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-badge">Featured</div>
+                        <img src="Images/project2.jpg" alt="MediStore Management System" class="project-img">
+                        <div class="project-hover">
+                            <div class="hover-content">
+                                <h4>View Details</h4>
+                                <div class="project-links">
+                                    <a href="#" class="project-link demo-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                    <a href="https://github.com/asad-snippets/Medistore-Manager" class="project-link code-link" target="_blank" rel="noopener">
+                                        <i class="fab fa-github"></i> Source Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">MediStore Management System</h3>
+                        <p class="project-description">A web-based system to manage pharmacy inventory and medicine stock, with a dedicated module to record sales and customer details efficiently.</p>
+                        <div class="project-tools">
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fab fa-react"></i></span>
+                                <span class="tool-name">React</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fab fa-node-js"></i></span>
+                                <span class="tool-name">Express.js</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fas fa-database"></i></span>
+                                <span class="tool-name">MongoDB</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fab fa-html5"></i></span>
+                                <span class="tool-name">HTML5</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fab fa-css3-alt"></i></span>
+                                <span class="tool-name">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: School System -->
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-badge">Full Stack</div>
+                        <img src="Images/project3.jpg" alt="School Management System" class="project-img">
+                        <div class="project-hover">
+                            <div class="hover-content">
+                                <h4>View Details</h4>
+                                <div class="project-links">
+                                    <a href="#" class="project-link demo-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                    <a href="https://github.com/asad-snippets/school-management-system" class="project-link code-link" target="_blank" rel="noopener">
+                                        <i class="fab fa-github"></i> Source Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">School Management System</h3>
+                        <p class="project-description">A full-featured school management solution with CRUD operations for staff, students, and subjects. Includes modules for fee tracking, salary processing, hostel records, and class timetables.</p>
+                        <div class="project-tools">
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fab fa-python"></i></span>
+                                <span class="tool-name">Python</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fab fa-js"></i></span>
+                                <span class="tool-name">Django</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fas fa-database"></i></span>
+                                <span class="tool-name">MySQL</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fab fa-html5"></i></span>
+                                <span class="tool-name">HTML5</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fab fa-css3-alt"></i></span>
+                                <span class="tool-name">CSS3</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fab fa-js-square"></i></span>
+                                <span class="tool-name">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: InventoryHub -->
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-badge">Full Stack</div>
+                        <img src="Images/project4.jpg" alt="InventoryHub Product Management App" class="project-img">
+                        <div class="project-hover">
+                            <div class="hover-content">
+                                <h4>View Details</h4>
+                                <div class="project-links">
+                                    <a href="#" class="project-link demo-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                    <a href="https://github.com/asad-snippets/Invento-Track" class="project-link code-link" target="_blank" rel="noopener">
+                                        <i class="fab fa-github"></i> Source Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">InventoryTrack</h3>
+                        <p class="project-description">A full-stack product management web application built with React and FastAPI. Features include adding, updating, deleting, filtering, and sorting products with real-time database integration and a responsive interface.</p>
+                        <div class="project-tools">
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fab fa-react"></i></span>
+                                <span class="tool-name">React</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fas fa-bolt"></i></span>
+                                <span class="tool-name">FastAPI</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fas fa-database"></i></span>
+                                <span class="tool-name">MySQL</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fab fa-html5"></i></span>
+                                <span class="tool-name">HTML5</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fab fa-css3-alt"></i></span>
+                                <span class="tool-name">CSS3</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="tool-icon"><i class="fab fa-js-square"></i></span>
+                                <span class="tool-name">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Services</h2>
+                <p>Professional services I offer to help your business grow</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h4>Django Development</h4>
+                        <p>Custom web application development using Django framework with secure authentication and scalable architecture.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4>REST API Development</h4>
+                        <p>Building robust RESTful APIs with Django REST Framework for web and mobile applications.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>Database Design</h4>
+                        <p>Designing and implementing efficient database structures with MySQL and MongoDB.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>Full Stack Development</h4>
+                        <p>End-to-end web development with Django backend and modern frontend technologies.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h4>Web Application Maintenance</h4>
+                        <p>Ongoing support, updates, and optimization for existing Django applications.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4>AI Integration</h4>
+                        <p>Implementing machine learning models into web applications for intelligent features.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>Available for development services and remote team projects. Let's connect and discuss how I can help your business grow!</p>
+                        
+                        <div class="contact-details mt-4">
+                            <div class="contact-item">
+                                <div class="icon-wrapper bg-primary-light">
+                                    <i class="fas fa-envelope text-primary"></i>
+                                </div>
+                                <div>
+                                    <span class="contact-label">EMAIL</span>
+                                    <span>muhammadasad3942@gmail.com</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="icon-wrapper bg-success-light">
+                                    <i class="fab fa-whatsapp text-success"></i>
+                                </div>
+                                <div>
+                                    <span class="contact-label">WHATSAPP</span>
+                                    <span>+92 300 2642211</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="icon-wrapper bg-dark-light">
+                                    <i class="fab fa-github text-dark"></i>
+                                </div>
+                                <div>
+                                    <span class="contact-label">GITHUB</span>
+                                    <span>asad-snippets</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="icon-wrapper bg-info-light">
+                                    <i class="fas fa-calendar-alt text-info"></i>
+                                </div>
+                                <div>
+                                    <span class="contact-label">AVAILABILITY</span>
+                                    <span>Monday - Saturday: 9am - 7pm (GMT+5)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <form id="contactForm" class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" id="sendBtn" class="btn btn-primary">Send Message</button>
+                        <div id="formAlert" class="alert mt-3"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/923002642211" class="whatsapp-float" target="_blank" rel="noopener" title="Contact me on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+      <footer class="footer">  
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">About Me</h5>
+                    <p>Professional web developer specializing in creating beautiful, responsive websites that help businesses succeed in the digital world.</p>
+                    <div class="mt-4">
+                        <a href="mailto:info@example.com" class="email-link">
+                            <i class="fas fa-envelope me-2"></i>muhammadasad3942
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home">Home</a></li>
+                        <li class="mb-2"><a href="#about">About</a></li>
+                        <li class="mb-2"><a href="#projects">Projects</a></li>
+                        <li class="mb-2"><a href="#services">Services</a></li>
+                        <li class="mb-2"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="text-uppercase mb-4">Connect With Me</h5>
+                    <div class="social-icons mb-4">
+                        <a href="https://www.facebook.com/share/18f2o1XZZJ/" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/m_asad02/" title="X"><i class="fas fa-x"></i></a>
+                        <a href="https://www.instagram.com/_.m.asadz?igsh=MW85MzY0d3gwbWJ3dg==" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammadasad26/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/asad-snippets/" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p>Subscribe to my newsletter for updates on latest projects and tech insights.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="mb-0">&copy; <span id="currentYear"></span> Muhammad Asad. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
