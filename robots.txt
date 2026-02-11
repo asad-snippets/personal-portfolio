@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://asad-snippets.github.io/personal-portfolio/sitemap.xml
+Sitemap: https://asadev.tech/sitemap.xml

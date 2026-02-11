@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://asad-snippets.github.io/personal-portfolio/</loc>
+    <loc>https://asadev.tech/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://asad-snippets.github.io/personal-portfolio/#about</loc>
+    <loc>https://asadev.tech/#about</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://asad-snippets.github.io/personal-portfolio/#projects</loc>
+    <loc>https://asadev.tech/#projects</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://asad-snippets.github.io/personal-portfolio/#services</loc>
+    <loc>https://asadev.tech/#services</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://asad-snippets.github.io/personal-portfolio/#contact</loc>
+    <loc>https://asadev.tech/#contact</loc>
     <priority>0.7</priority>
   </url>
 </urlset>
