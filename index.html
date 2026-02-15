@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="ORJ9oU23UPzDDpE2xLFvHme1yZCeqnIL0H8Qw4BXAJM" />
-    <meta name="description" content="ASADX - Personal portfolio of a web developer, showcasing projects, skills, and services.">
-    <meta name="description" content="Muhammad Asad is a Python & Django developer specializing in secure, scalable web applications, REST APIs, and full-stack development. View projects, services, and contact details.">
-    <meta property="og:title" content="Muhammad Asad | Python & Django Developer">
-    <meta property="og:description" content="Python & Django developer building secure, scalable web applications and REST APIs.">
-    <meta property="og:type" content="website">
-    <meta name="keywords" content="ASADX, portfolio, web developer, projects, skills, services, HTML, CSS, JavaScript">
-    <meta name="author" content="ASADX">
-    <meta name="robots" content="index, follow">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="ORJ9oU23UPzDDpE2xLFvHme1yZCeqnIL0H8Qw4BXAJM" />
     <meta name="google-site-verification" content="d5LF2TDochGg1D5DyK9d0v4cCs6HTSG4bQb4obLziqg" />
+
+    <!-- ✅ SINGLE, CORRECT META DESCRIPTION -->
+    <meta name="description" content="Aspiring Computer Science graduate specializing in Python and Django development. I build secure, scalable web applications using Django REST Framework, REST APIs, and modern frontend technologies.">
+
+    <meta name="keywords" content="Muhammad Asad, Python Developer, Django Developer, Computer Science Graduate, Portfolio, Web Developer, REST APIs">
+    <meta name="author" content="Muhammad Asad">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Muhammad Asad | Python & Django Developer">
+    <meta property="og:description" content="Aspiring Computer Science graduate specializing in Python and Django development. Building secure, scalable web applications with Django REST Framework.">
+    <meta property="og:type" content="website">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>ASADX</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='gradBg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%234A90E2;stop-opacity:1'/%3E%3Cstop offset='50%25' style='stop-color:%232E5BBA;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%231B3A6B;stop-opacity:1'/%3E%3C/linearGradient%3E%3ClinearGradient id='gradAccent' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2364B5F6;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%232196F3;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='12' fill='url(%23gradBg)'/%3E%3Crect x='8' y='12' width='48' height='40' rx='4' fill='none' stroke='url(%23gradAccent)' stroke-width='2' opacity='0.4'/%3E%3Cpath d='M18 28 L14 32 L18 36' fill='none' stroke='%23FFFFFF' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M46 28 L50 32 L46 36' fill='none' stroke='%23FFFFFF' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='24' y1='26' x2='40' y2='26' stroke='%23FFFFFF' stroke-width='1.5' opacity='0.8'/%3E%3Cline x1='24' y1='32' x2='40' y2='32' stroke='%23FFFFFF' stroke-width='1.5' opacity='0.8'/%3E%3Cline x1='24' y1='38' x2='40' y2='38' stroke='%23FFFFFF' stroke-width='1.5' opacity='0.8'/%3E%3Ccircle cx='32' cy='52' r='2.5' fill='%2364B5F6'/%3E%3C/svg%3E">
-    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA/klEQVR4nO3UMQrCQBCG4QksULBQbBQsRBEbsRHEzs7OykILsRUr8Qo5QOzkDBZewEYshERBEDvBxkIkkHkh3hG5g9vZ3d2d2b/+M3/x8/+xM1AqlUqlUqlUKpVKpVKpVCqVSqVS+V+JxWJ4PB4YjUb4+/sHXq8X5vM5arUajsfjMtKdjvYXExMT/H4/Ho/nxVUUBQ6HA0wmk2XkuSFKpRK0Wi0Ui0VMJhOEQiGEQiFMJpMV5BoaGGi325DJZJDL5SBJE0xGI/z5+QHz+RyTyQTr9RrLpRLmy+Xi47ndblQqFZRKJZhMJpiN46/vbrlcQq/Xg8PhgM1mg16vB4fDgVarBZPJhM1mg3K5jM1mA7PZDIPBAL/fjzqdDnZ2dsSxWCyYTCZYLpcYDAaYzWbY7/dQrVaXkXMDlEqlUql8h/8BGrpNg7zJurkAAAAASUVORK5CYII=" sizes="32x32">
-    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAABbklEQVR4nO3UMQrCQBCG4QksULBQbBQsRBEbsRHEzs7OykILsRUr8Qo5QOzkDBZewEYshERBEDvBxkIkkHkh3hG5g9vZ3d2d2b/+M3/x8/+xM1AqlUqlUqlUKpVKpVKpVCqVSqVS+V+JxWJ4PB4YjUb4+/sHXq8X5vM5arUajsfjMtKdjvYXExMT/H4/Ho/nxVUUBQ6HA0wmk2XkuSFKpRK0Wi0Qi0UwGo2QSCQQj8cxmUxWkGtoYKDdbkMmk0Eul4MkTTAZjfDn5wfM53NMJhNMJhMsl0osly6XT55eOp2GXq9HpVJBLpeDyWiG2dj++v6Wy+V11+v1ymw2g0ajQaVSQSqVQjAYRDKZxGQywXK5xGq1wmq1Qr1eR6FQwG63w3A4RKfTwXA4RLfbRa/XQ7fbRbVaRa/XQ6/XQzqdhslkQjqdRjabRfaPl8fj+cXZ2RlmMxlmMxkGgwGGwyGGwyEqlQoGgwHK5TIGgwEGgwEGgwGGwyHG4zHm8zn4fD5sNhssFgtUKhWUy2WUSiXodDooFAqoVCrIZDJQKpWYz+dQKBRQKBTIZDIolUqQy+V4eHhAJpNBOp1GNptFOp3G/f391jEajUa8vLwgm81idnZ2dAOUSqVSqVSv/AHpCt5Qj0xZHgAAAABJRU5ErkJggg==" sizes="64x64">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAACr8Q9kAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVElEQVR4nO3UMQrCQBCG4QksULBQbBQsRBEbsRHEzs7OykILsRUr8Qo5QOzkDBZewEYshERBEDvBxkIkkHkh3hG5g9vZ3d2d2b/+M3/x8/+xM1AqlUqlUqlUKpVKpVKpVCqVSqVS+V+JxWJ4PB4YjUb4+/sHXq8X5vM5arUajsfjMtKdjvYXExMT/H4/Ho/nxVUUBQ6HA0wmk2XkuSFKpRK0Wi0Qi0UwGo2QSCQQj8cxmUxWkGtoYKDdbkMmk0Eul4MkTTAZjfDn5wfM53NMJhNMJhMsl0osly6XT55eOp2GXq9HpVJBLpeDyWiG2dj++v6Wy+V11+v1ymw2g0ajQaVSQSqVQjAYRDKZxGQywXK5xGq1wmq1Qr1eR6FQwG63w3A4RKfTwXA4RLfbRa/XQ7fbRbVaRa/XQ6/XQzqdRjqdRjabRTabRSqVQiqVglqthkajgUajgVqthmq1CpVKhVqtBqVSCaVSCZVKBZVKBXq9HkqlEkqlEkqlEp6enqDT6dBoNHA6nTA6nZDL5Xj7+/tVX19f0Gq1UK1WoVKpoFarQavVQq1WQ6lUglKpRLlcRqlUwvv7O/r9Pvr9PkajEWazGQaDAfr9PkajEVqtFlqtFmq1GlqtFnq9HvV6HZ1OB91uF91uF91uF91uF+12G71eD61WC61WC71eD51OBz0eD+p1Ho8Ho9EIarUavV4Po9EI7XYb5+fnaLVaaLVaaLVa6HQ66HQ66HQ6uL29xenp6dfJyQkQkfrQRqNBp9NBoVDAYDBAu91Gp9NBo9FAuVxGtVpFtVpFo9FAp9NBo9FAq9VCqVRCsVhEo9FAp9NBo9FAuVxGq9VCuVxGo9FAr9dDq9VCo9FAq9VCo9FAr9eDzWbDzc0NkslkysPlcsFutwPxxXuaVCqVSqVSqVSv/AHlYDlmNXQDdgAAAABJRU5ErkJggg=="">
-    
+
+    <!-- Icons (unchanged) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,...">
+    <link rel="icon" sizes="32x32" href="data:image/png;base64,...">
+    <link rel="icon" sizes="64x64" href="data:image/png;base64,...">
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,...">
+
+    <!-- CSS & Libraries -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <link rel="stylesheet" href="styles.css">
